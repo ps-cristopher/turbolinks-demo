@@ -1,0 +1,165 @@
+html, body {
+  margin: 0;
+  font-family: "Lucida Console", Courier, monospace;
+  height: 100%;
+}
+
+.main{
+  min-height: 89%;
+  margin-bottom: -100px;
+  text-align: center;
+}
+
+.footer, .push {
+  height: 50px;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f1d300;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #333;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #f1d300;
+  border: none;
+  color: #333;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadein {
+  animation: fadein 1s;
+}
+
+.fadeout {
+  animation: fadeout 1s;
+}
+
+.header-title {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-h {
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.header-h-mobile {
+  display: none;
+}
+
+.footer-title {
+  margin: 0;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+
+  .header-h {
+    display: none;
+  }
+
+  .header-h-mobile {
+    display: block;
+  }
+  .header-title {
+    justify-content: flex-start;
+  }
+
+}

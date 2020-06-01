@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="turbolinks-visit-control" content="reload">
+    <title>Turbolinks Demo</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="topnav" data-turbolinks-permanent>
+      <div class="header-title">
+        <h2 class="header-h header-h-mobile">Turbolinks Demo</h2>
+      </div>
+      <!-- <a class="active" href="/" data-turbolinks="false">Inicio</a> -->
+      <a class="active" href="/">Inicio</a>
+      <a href="/about.html">Acerca de</a>
+      <a href="/contact.html">Contacto</a>
+
+      <div class="header-title">
+        <h2 class="header-h">Turbolinks Demo</h2>
+      </div>
+    </div>
+
+    <div class="main fadein">
+      <h1>Este es el inicio</h1>
+      <p>¡Hola Mundo!</p>
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Basico</li>
+          <li class="grey">$ 999 / año</li>
+          <li>10GB Storage</li>
+          <li>10 Emails</li>
+          <li>10 Domains</li>
+          <li>1GB Bandwidth</li>
+          <li class="grey"><a class="button" onclick="goToContact()">Comprar</a></li>
+        </ul>
+      </div>
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Intermedio</li>
+          <li class="grey">$ 1,999 / año</li>
+          <li>10GB Storage</li>
+          <li>10 Emails</li>
+          <li>10 Domains</li>
+          <li>1GB Bandwidth</li>
+          <li class="grey"><a class="button" onclick="goToContact()">Comprar</a></li>
+        </ul>
+      </div>
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Avanzado</li>
+          <li class="grey">$ 2,999 / año</li>
+          <li>10GB Storage</li>
+          <li>10 Emails</li>
+          <li>10 Domains</li>
+          <li>1GB Bandwidth</li>
+          <li class="grey"><a class="button" onclick="goToContact()">Comprar</a></li>
+        </ul>
+      </div>
+      <div class="push"></div>
+    </div>
+    <div class="footer" data-turbolinks-permanent>
+      <h4 class="footer-title">Turbolinks Demo</h4>
+      <h5 class="footer-title">by</h5>
+      <a href="https://www.cristopherps.com" target="_blank">
+        <img src="./img/logo.png" style="width: 10rem;"/>
+      </a>
+    </div>
+  </body>
+</html>

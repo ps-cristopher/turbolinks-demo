@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Turbolinks Demo</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="topnav" data-turbolinks-permanent>
+      <div class="header-title">
+        <h2 class="header-h header-h-mobile">Turbolinks Demo</h2>
+      </div>
+      <!-- <a href="/" data-turbolinks="false">Inicio</a> -->
+      <a href="/">Inicio</a>
+      <a href="/about.html">Acerca de</a>
+      <a class="active" href="/contact.html">Contacto</a>
+
+      <div class="header-title">
+        <h2 class="header-h">Turbolinks Demo</h2>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Contacto</h1>
+      <div class="container">
+        <div style="text-align:center">
+          <p>Escríbenos un mensaje:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Nombre</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Escribe tu nombre"
+              />
+              <label for="lname">Apellido</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Escribe tu apellido"
+              />
+              <label for="country">País</label>
+              <select id="country" name="country">
+                <option value="mexico">México</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Asunto</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Escribe tu asunto"
+                style="height:170px"
+              ></textarea>
+              <a href="#" class="button">Enviar</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" data-turbolinks-permanent>
+      <h4 class="footer-title">Turbolinks Demo</h4>
+      <h5 class="footer-title">by</h5>
+      <a href="https://www.cristopherps.com" target="_blank">
+        <img src="./img/logo.png" style="width: 10rem;"/>
+      </a>
+    </div>
+  </body>
+</html>
